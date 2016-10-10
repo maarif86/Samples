@@ -1,0 +1,14 @@
+﻿<div id="wrapper">
+    <div>
+        @Html.Partial("_Navigation")
+    </div>
+
+    <div id="page-wrapper" class="gray-bg">
+        @Html.Partial("_TopNavigation")
+        
+        <div ui-view></div> 
+        
+        <div>@Html.Partial("_Footer")</div>  
+    </div>
+</div>
+

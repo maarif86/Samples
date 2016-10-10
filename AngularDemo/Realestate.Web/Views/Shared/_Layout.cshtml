@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html ng-app="realestate">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    @Styles.Render("~/css")
+
+</head>
+<body>
+    <!--Render Body Part-->
+    @RenderBody()
+
+    <!--Render Main Scripts-->
+    @Scripts.Render("~/angular")
+    @Scripts.Render("~/scripts")
+    @Scripts.Render("~/app")
+   
+    <!--Render Script Section-->
+    @RenderSection("scripts", false)
+
+</body>
+</html>
