@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
 
     @Styles.Render("~/css")
 
@@ -13,8 +14,12 @@
     @RenderBody()
 
     <!--Render Main Scripts-->
-    @Scripts.Render("~/angular")
     @Scripts.Render("~/scripts")
+    @Scripts.Render("~/script/dashboard")
+
+    @Scripts.Render("~/angular")
+    @Scripts.Render("~/angular/dashboard")
+
     @Scripts.Render("~/app")
    
     <!--Render Script Section-->

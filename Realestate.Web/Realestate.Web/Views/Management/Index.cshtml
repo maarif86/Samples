@@ -1,0 +1,46 @@
+﻿<div>
+    <!-- Main navbar -->
+    @Html.Partial("_TopNavbar")
+    <!-- /main navbar -->
+
+    <!-- Page container -->
+    <div class="page-container">
+
+        <!-- Page content -->
+        <div class="page-content">
+
+            <!-- Main sidebar -->
+            @Html.Partial("_Navigation")
+            <!-- /main sidebar -->
+
+            <!--Content Wrapper-->
+            <div class="content-wrapper">
+
+                <!-- Page header -->
+                @Html.Partial("_PageHeader")
+                <!-- /page header -->
+
+                <!-- Content area -->
+                <div class="content">
+
+                    <!-- Main content -->
+                    <div ui-view></div>
+                    <!-- /main content -->
+
+                    <!--Footer-->
+                    @Html.Partial("_Footer")
+                    <!-- /Footer -->
+
+                </div>
+                <!-- /Content area -->
+
+            </div>
+            <!--/Content Wrapper-->
+
+        </div>
+        <!-- /Page content -->
+
+    </div>
+    <!-- /Page container -->
+
+</div>

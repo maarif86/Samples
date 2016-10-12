@@ -32,6 +32,7 @@ namespace Realestate.Web
             bundles.Add(new ScriptBundle("~/angular").Include(
                     "~/Scripts/angular/angular.min.js",
                     "~/Scripts/angular/angular-route.min.js",
+                    "~/Scripts/plugins/ui-router/angular-ui-router.min.js",
                     "~/Scripts/plugins/bootstrap/ui-bootstrap-tpls-2.1.4.min.js"
                 ));
 
@@ -43,6 +44,17 @@ namespace Realestate.Web
                     "~/Scripts/js/directives/dashboard.directive.js"
                 ));
 
+            // Scripts: Dashboard Page
+            bundles.Add(new ScriptBundle("~/script/dashboard").Include(
+                    "~/Scripts/plugins/flot/jquery.flot.js",
+                    "~/Scripts/plugins/flot/jquery.flot.spline.js",
+                    "~/Scripts/plugins/sparkline/jquery.sparkline.min.js"
+                ));
+
+            // Angular: Dashboard Page
+            bundles.Add(new ScriptBundle("~/angular/dashboard").Include(
+                    "~/Scripts/plugins/flot/angular-flot.js"
+                ));
         }
     }
 }

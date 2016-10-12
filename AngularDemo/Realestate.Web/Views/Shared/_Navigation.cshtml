@@ -31,17 +31,27 @@
                     RM+
                 </div>
             </li>
-            <li ng-class="{active: $state.includes('dashboards')}">
-                <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span> <span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('dashboards')}">
-                    <li ui-sref-active="active"><a ui-sref="dashboards.dashboard_1">Dashboard v.1</a></li>
-                    <li ui-sref-active="active"><a ui-sref="dashboards.dashboard_2">Dashboard v.2</a></li>
-                    <li ui-sref-active="active"><a ui-sref="dashboards.dashboard_3">Dashboard v.3</a></li>
+            
+            <li ui-sref-active="active">
+                <a ui-sref="dashboard"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span> </a>
+            </li>
+
+            <li ng-class="{active: $state.includes('company')}">
+                <a href=""><i class="fa fa-th-large"></i> <span class="nav-label">Company</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('company')}">
+                    <li ui-sref-active="active">
+                        <a ui-sref="company.create">Create Company</a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a ui-sref="company.list">Company List</a>
+                    </li>
                 </ul>
             </li>
+            
             <li ui-sref-active="active">
-                <a ui-sref="layouts"><i class="fa fa-diamond"></i> <span class="nav-label">Layout</span> </a>
+                <a ui-sref="project"><i class="fa fa-area-chart"></i> <span class="nav-label">Project</span></a>
             </li>
+
         </ul>
     </div>
 </nav>

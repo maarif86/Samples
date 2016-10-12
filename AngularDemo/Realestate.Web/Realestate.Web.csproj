@@ -20,6 +20,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -934,6 +935,8 @@
     <Content Include="Fonts\font-awesome\scss\_rotated-flipped.scss" />
     <Content Include="Fonts\font-awesome\scss\_stacked.scss" />
     <Content Include="Fonts\font-awesome\scss\_variables.scss" />
+    <Content Include="Areas\Management\Views\web.config" />
+    <Content Include="Areas\Management\Views\Project\_Create.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -946,10 +949,22 @@
     <Content Include="Scripts\js\directives\dashboard.directive.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\plugins\bootstrap\ui-bootstrap-tpls-2.1.4.min.js" />
+    <Content Include="Scripts\plugins\flot\angular-flot.js" />
+    <Content Include="Scripts\plugins\flot\curvedLines.js" />
+    <Content Include="Scripts\plugins\flot\excanvas.min.js" />
+    <Content Include="Scripts\plugins\flot\jquery.flot.js" />
+    <Content Include="Scripts\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="Scripts\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="Scripts\plugins\flot\jquery.flot.spline.js" />
+    <Content Include="Scripts\plugins\flot\jquery.flot.symbol.js" />
+    <Content Include="Scripts\plugins\flot\jquery.flot.time.js" />
+    <Content Include="Scripts\plugins\flot\jquery.flot.tooltip.min.js" />
     <Content Include="Scripts\plugins\metisMenu\jquery.metisMenu.js" />
     <Content Include="Scripts\plugins\pace\pace.min.js" />
     <Content Include="Scripts\plugins\slimscroll\jquery.slimscroll.js" />
     <Content Include="Scripts\plugins\slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Scripts\plugins\ui-router\angular-ui-router.js" />
+    <Content Include="Scripts\plugins\ui-router\angular-ui-router.min.js" />
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Views\_ViewStart.cshtml" />
@@ -963,8 +978,12 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Management\Controllers\ProjectController.cs" />
+    <Compile Include="Areas\Management\ManagementAreaRegistration.cs" />
+    <Compile Include="Controllers\CompanyController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProjectController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -987,6 +1006,8 @@
     <Content Include="Scripts\angular\angular.min.js.map" />
     <Content Include="Scripts\angular\errors.json" />
     <Content Include="Scripts\angular\version.json" />
+    <Content Include="Views\Company\_Create.cshtml" />
+    <Content Include="Views\Company\_List.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -996,8 +1017,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Management\Models\" />
+    <Folder Include="Areas\Management\Scripts\" />
+    <Folder Include="Areas\Management\Views\Shared\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\angular\i18n\ngLocale\" />
+    <Folder Include="Views\Project\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
