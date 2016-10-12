@@ -425,6 +425,8 @@
     <Content Include="Scripts\angular\version.json" />
     <Content Include="Scripts\core\app.config.js" />
     <Content Include="Scripts\core\app.module.js" />
+    <Content Include="Areas\Management\Views\Company\_Create.cshtml" />
+    <Content Include="Areas\Management\Views\Company\_List.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\angular\angular-animate.js" />
     <Content Include="Scripts\angular\angular-animate.min.js" />
@@ -1209,6 +1211,7 @@
     <Content Include="Scripts\js\app\app.config.js" />
     <Content Include="Scripts\js\app\app.module.js" />
     <Content Include="Scripts\js\app\realestate.js" />
+    <Content Include="Scripts\js\common\functions.js" />
     <Content Include="Scripts\js\controllers\dashboard.controller.js" />
     <Content Include="Scripts\js\directives\dashboard.directive.js" />
     <Content Include="Scripts\pages\dashboard.js" />
@@ -1534,6 +1537,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Account\AccountAreaRegistration.cs" />
     <Compile Include="Areas\Account\Controllers\UserController.cs" />
+    <Compile Include="Areas\Management\Controllers\CompanyController.cs" />
     <Compile Include="Areas\Management\Controllers\ProjectController.cs" />
     <Compile Include="Areas\Management\ManagementAreaRegistration.cs" />
     <Compile Include="Controllers\DashboardController.cs" />

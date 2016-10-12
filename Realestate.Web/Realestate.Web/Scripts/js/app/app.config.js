@@ -20,21 +20,31 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
         })
         .state('company', {
             abstract: true,
-            url: '/company',
+            url: '/management/company',
             template: '<ui-view />'
         })
         .state('company.create', {
             url: '/create',
-            templateUrl: '/company/create'
+            templateUrl: '/management/company/create'
         })
         .state('company.list', {
             url: '/list',
-            templateUrl: "/company/list"
+            templateUrl: "/management/company/list"
         })
         .state('project', {
-            url: "project",
-            templateUrl: "management/project/index"
-        });
+            abstract: true,
+            url: "/management/project",
+            template: '<ui-view />'
+        })
+        .state('project.create', {
+            url: '/create',
+            templateUrl: '/management/project/create'
+        })
+        .state('project.list', {
+            url: '/list',
+            templateUrl: '/management/project/list'
+        })
+
 
     $locationProvider.html5Mode({
         enabled: true,

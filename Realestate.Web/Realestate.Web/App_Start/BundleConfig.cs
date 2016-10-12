@@ -16,7 +16,8 @@ namespace Realestate.Web
                         "~/Content/bootstrap.css",
                         "~/Content/css/core.css",
                         "~/Content/css/components.css",
-                        "~/Content/css/colors.css"
+                        "~/Content/css/colors.css",
+                        "~/Content/css/icons/fontawesome/styles.min.css"
                     ));
 
             // Global JS Scripts
@@ -54,6 +55,11 @@ namespace Realestate.Web
                         "~/Scripts/plugins/flot/angular-flot.js"
                     ));
 
+            // Scripts: Input Form: Company
+            bundles.Add(new ScriptBundle("~/scripts/form").Include(
+                        "~/Scripts/plugins/forms/styling/uniform.min.js",
+                        "~/Scripts/plugins/forms/selects/select2.min.js"
+                    ));
         }
     }
 }
