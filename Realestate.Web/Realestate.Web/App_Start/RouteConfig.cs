@@ -14,21 +14,9 @@ namespace Realestate.Web
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Dashboard",
-                url: "dashboard",
-                defaults: new { controller = "Dashboard", action = "Index" }
-            );
-
-            routes.MapRoute(
-                name: "NewProject",
-                url: "management/project/new",
-                defaults: new { controller = "Project", action = "New", area = "Management" }
-            );
-
-            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Management", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

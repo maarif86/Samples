@@ -1540,6 +1540,7 @@
     <Compile Include="Areas\Management\Controllers\CompanyController.cs" />
     <Compile Include="Areas\Management\Controllers\ProjectController.cs" />
     <Compile Include="Areas\Management\ManagementAreaRegistration.cs" />
+    <Compile Include="Controllers\AccountsController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\ManagementController.cs" />
     <Compile Include="Global.asax.cs">
@@ -1570,6 +1571,10 @@
     <Content Include="Scripts\plugins\oclazyload\LICENSE.md" />
     <Content Include="Scripts\plugins\oclazyload\README.md" />
     <Content Include="Views\Management\Index.cshtml" />
+    <Content Include="Views\Accounts\Login.cshtml" />
+    <Content Include="Views\Shared\_LoginLayout.cshtml" />
+    <Content Include="Views\Accounts\ResetPassword.cshtml" />
+    <Content Include="Views\Accounts\Register.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
