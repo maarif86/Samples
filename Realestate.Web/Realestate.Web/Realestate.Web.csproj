@@ -405,7 +405,6 @@
     <Content Include="Content\css\icons\icomoon\fonts\icomoon.ttf" />
     <Content Include="Content\css\icons\icomoon\fonts\icomoon.woff" />
     <Content Include="Areas\Account\Views\web.config" />
-    <Content Include="Areas\Management\Views\Project\New.cshtml" />
     <Content Include="Areas\Management\Views\_ViewStart.cshtml" />
     <Content Include="Scripts\angular\angular-animate.min.js.map" />
     <Content Include="Scripts\angular\angular-aria.min.js.map" />
@@ -427,6 +426,11 @@
     <Content Include="Scripts\core\app.module.js" />
     <Content Include="Areas\Management\Views\Company\_Create.cshtml" />
     <Content Include="Areas\Management\Views\Company\_List.cshtml" />
+    <Content Include="Areas\Management\Views\Project\_List.cshtml" />
+    <Content Include="Areas\Management\Views\Project\_Create.cshtml" />
+    <Content Include="Areas\Management\Views\Booking\_ApplicantDetails.cshtml" />
+    <Content Include="Areas\Management\Views\Booking\_List.cshtml" />
+    <Content Include="Areas\Management\Views\Booking\_TransferDetails.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\angular\angular-animate.js" />
     <Content Include="Scripts\angular\angular-animate.min.js" />
@@ -1537,6 +1541,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Account\AccountAreaRegistration.cs" />
     <Compile Include="Areas\Account\Controllers\UserController.cs" />
+    <Compile Include="Areas\Management\Controllers\BookingController.cs" />
     <Compile Include="Areas\Management\Controllers\CompanyController.cs" />
     <Compile Include="Areas\Management\Controllers\ProjectController.cs" />
     <Compile Include="Areas\Management\ManagementAreaRegistration.cs" />

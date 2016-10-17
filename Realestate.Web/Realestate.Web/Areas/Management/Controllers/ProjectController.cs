@@ -12,12 +12,12 @@ namespace Realestate.Web.Areas.Management.Controllers
         
         public ActionResult New()
         {
-            return PartialView();
+            return PartialView("_Create");
         }
 
         public ActionResult List()
         {
-            return View();
+            return PartialView("_List");
         }
     }
 }
