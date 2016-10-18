@@ -431,6 +431,11 @@
     <Content Include="Areas\Management\Views\Booking\_ApplicantDetails.cshtml" />
     <Content Include="Areas\Management\Views\Booking\_List.cshtml" />
     <Content Include="Areas\Management\Views\Booking\_TransferDetails.cshtml" />
+    <Content Include="Areas\Management\Views\Unit\_Create.cshtml" />
+    <Content Include="Areas\Management\Views\Unit\_List.cshtml" />
+    <Content Include="Areas\Management\Views\Dealer\_Create.cshtml" />
+    <Content Include="Areas\Management\Views\Dealer\_List.cshtml" />
+    <Content Include="Areas\Account\Views\User\_Profile.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\angular\angular-animate.js" />
     <Content Include="Scripts\angular\angular-animate.min.js" />
@@ -1543,7 +1548,9 @@
     <Compile Include="Areas\Account\Controllers\UserController.cs" />
     <Compile Include="Areas\Management\Controllers\BookingController.cs" />
     <Compile Include="Areas\Management\Controllers\CompanyController.cs" />
+    <Compile Include="Areas\Management\Controllers\DealerController.cs" />
     <Compile Include="Areas\Management\Controllers\ProjectController.cs" />
+    <Compile Include="Areas\Management\Controllers\UnitController.cs" />
     <Compile Include="Areas\Management\ManagementAreaRegistration.cs" />
     <Compile Include="Controllers\AccountsController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
@@ -1591,7 +1598,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Account\Models\" />
     <Folder Include="Areas\Account\Views\Shared\" />
-    <Folder Include="Areas\Account\Views\User\" />
     <Folder Include="Areas\Management\Models\" />
     <Folder Include="Areas\Management\Views\Shared\" />
     <Folder Include="Models\" />

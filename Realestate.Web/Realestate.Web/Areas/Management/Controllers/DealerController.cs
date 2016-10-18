@@ -6,22 +6,17 @@ using System.Web.Mvc;
 
 namespace Realestate.Web.Areas.Management.Controllers
 {
-    public class BookingController : Controller
+    public class DealerController : Controller
     {
-        // GET: Management/Booking
+        // GET: Management/Dealer
         public ActionResult Create()
         {
-            return PartialView("_ApplicantDetails");
+            return PartialView("_Create");
         }
 
         public ActionResult List()
         {
             return PartialView("_List");
-        }
-
-        public ActionResult ChangeStatus()
-        {
-            return PartialView("_TransferDetails");
         }
     }
 }
